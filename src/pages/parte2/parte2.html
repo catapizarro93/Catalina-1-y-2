@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar color="color2">
+    <ion-title>parte2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+<ion-content padding>
+  <ion-list>
+
+      <ion-item>
+          <ion-label floating>Nombre</ion-label>
+          <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Resistencia</ion-label>
+        <ion-input type="number" [(ngModel)]="resistencia"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Descuento</ion-label>
+      <ion-input type="number" [(ngModel)]="descuento"></ion-input>
+  </ion-item>
+
+      <button ion-button block (click)="clickNombre()">Total Resistencia</button>
+      
+          </ion-list>
+      </ion-content>
